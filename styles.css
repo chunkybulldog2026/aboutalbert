@@ -4,12 +4,16 @@
 @media(max-width:520px){.hero-kicker{padding-top:2rem}.hero-grid{gap:3rem}.hero h1{font-size:5rem}.lede{margin-top:2rem}.hero-actions{align-items:stretch;flex-direction:column}.button{width:100%}.text-link{text-align:center;margin:.5rem 0}.filters{gap:.5rem}.filter-button{font-size:.7rem;padding:.55rem .8rem}.project-card{padding:2rem}.metric-grid{grid-template-columns:1fr 1fr}.timeline-item{grid-template-columns:1fr;gap:.5rem}.timeline-summary{grid-column:1}.resume-card{padding:2rem}.contact h2{font-size:4rem}.contact-links a,.contact-links>div{display:block}.contact-links span{display:block;margin-bottom:.35rem}footer{align-items:flex-start;flex-direction:column;gap:.7rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.marquee div{animation:none}}
 
-/* Real coverage imagery supplied for the portfolio */
-.project-visual{position:relative;margin:0 0 1.8rem}.project-logo{position:absolute;z-index:3;top:.8rem;left:.8rem;width:auto;max-width:150px;height:42px;object-fit:contain;background:rgba(244,241,233,.96);border:1px solid rgba(17,17,15,.16);padding:.45rem .65rem;box-shadow:0 4px 16px rgba(0,0,0,.08)}
-.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:.65rem}.story-shot{position:relative;display:block;overflow:hidden;background:#ddd;border:1px solid currentColor;aspect-ratio:1.38/1}.story-shot img{width:100%;height:100%;display:block;object-fit:cover;object-position:top center;transition:transform .35s ease,filter .35s ease}.story-shot:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.8));pointer-events:none}.story-shot span{position:absolute;z-index:2;left:.8rem;right:.8rem;bottom:.65rem;color:#fff;display:flex;justify-content:space-between;align-items:center;font-size:.72rem;font-weight:600;letter-spacing:.02em;text-shadow:0 1px 8px rgba(0,0,0,.5)}.story-shot b{font-size:1rem;font-weight:400;transition:transform .25s}.story-shot:hover img,.story-shot:focus img{transform:scale(1.035);filter:contrast(1.03)}.story-shot:hover b,.story-shot:focus b{transform:translate(2px,-2px)}
-.brand-panel{min-height:180px;margin:0 0 1.8rem;border:1px solid currentColor;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:#fff}.brand-panel img{width:min(82%,520px);height:auto;max-height:120px;object-fit:contain}.brand-panel span{position:absolute;bottom:.65rem;left:.8rem;text-transform:uppercase;letter-spacing:.12em;font-size:.62rem;color:#555}.project-card.dark .brand-panel{background:var(--paper);color:var(--ink)}
-/* With imagery, cards should size to their content rather than force huge empty areas. */
-.project-card{min-height:0}.project-copy{min-height:4.7em}.metric-grid{margin-top:0}.case-links{margin-top:auto}.project-card.dark .story-shot{border-color:rgba(244,241,233,.45)}
-@media(max-width:1100px){.project-logo{max-width:120px;height:38px}.story-shot{aspect-ratio:1.25/1}}
-@media(max-width:620px){.story-grid{grid-template-columns:1fr}.story-shot{aspect-ratio:16/10}.project-copy{min-height:0}.project-logo{max-width:130px}}
-@media(prefers-reduced-motion:reduce){.story-shot img,.story-shot b{transition:none}}
+
+/* Clean, fixed media treatment */
+.feature-shot{display:block;position:relative;margin:0 0 1.6rem;aspect-ratio:16/9;overflow:hidden;border:1px solid currentColor;background:#e6e3db}
+.feature-shot img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .25s ease}
+.feature-shot:after{content:"";position:absolute;inset:55% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.78));pointer-events:none}
+.feature-shot span{position:absolute;z-index:2;left:1rem;right:1rem;bottom:.8rem;display:flex;justify-content:space-between;gap:1rem;align-items:end;color:white;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.feature-shot strong{font-size:.8rem}.feature-shot b{font-size:.72rem;font-weight:500}.feature-shot:hover img,.feature-shot:focus img{transform:scale(1.015)}
+.logo-panel{display:flex;align-items:center;justify-content:center;margin:0 0 1.6rem;aspect-ratio:16/9;border:1px solid currentColor;background:#fff;padding:2rem}
+.logo-panel img{display:block;max-width:82%;max-height:72%;width:auto;height:auto;object-fit:contain}
+.project-card.dark .logo-panel{background:var(--paper)}
+.project-card{min-height:0}.project-copy{min-height:0}.metric-grid{margin-top:0}.case-links{margin-top:1.5rem}
+@media(max-width:620px){.feature-shot span{left:.75rem;right:.75rem;bottom:.65rem}.feature-shot b{display:none}}
+@media(prefers-reduced-motion:reduce){.feature-shot img{transition:none}}
