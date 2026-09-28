@@ -10,6 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+
+<style>
+/* Writing portfolio */
+.writing-showcase{display:grid;gap:1.5rem;margin-top:2rem}.writing-feature-card{padding:clamp(1.5rem,4vw,3.5rem);border:1px solid rgba(0,0,0,.16);background:#151515;color:#fff}.writing-feature-card .writing-label,.writing-card .writing-label{font-size:.78rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;opacity:.7;margin:0 0 1rem}.writing-feature-card h3{font-size:clamp(2rem,5vw,4.25rem);line-height:.98;max-width:850px;margin:.25rem 0 1rem}.writing-deck{font-family:Newsreader,serif;font-size:clamp(1.1rem,2vw,1.45rem);line-height:1.45;max-width:800px;margin:0 0 1.25rem}.writing-role{font-size:.95rem;line-height:1.6;max-width:760px;opacity:.78;margin:0 0 1.5rem}.publication-row{display:flex;gap:.75rem;flex-wrap:wrap;margin:1.5rem 0}.publication-mark{border:1px solid rgba(255,255,255,.3);padding:.75rem 1rem;min-width:160px}.publication-mark strong{display:block;font-size:1rem}.publication-mark span{display:block;font-size:.8rem;opacity:.65;margin-top:.15rem}.writing-actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.5rem}.writing-actions a{display:inline-flex;align-items:center;justify-content:center;padding:.8rem 1rem;border:1px solid currentColor;text-decoration:none;font-weight:600;font-size:.9rem}.writing-feature-card .writing-actions a.primary-sample{background:#fff;color:#151515;border-color:#fff}.writing-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}.writing-card{border:1px solid rgba(0,0,0,.16);padding:1.5rem;display:flex;flex-direction:column;min-height:330px}.writing-card h3{font-size:1.55rem;line-height:1.12;margin:.25rem 0 1rem}.writing-card p{line-height:1.6}.writing-card .writing-actions{margin-top:auto;padding-top:1rem}.writing-card .writing-actions a{width:100%}.writing-metrics{display:flex;gap:1rem;flex-wrap:wrap;margin:1rem 0}.writing-metrics span{font-size:.8rem;line-height:1.3}.writing-metrics strong{display:block;font-size:1.2rem}.writing-note{font-size:.88rem;opacity:.72;margin-top:.75rem}.writing-unpack{margin-top:1.6rem;border-top:1px solid rgba(255,255,255,.22);border-bottom:1px solid rgba(255,255,255,.22)}.writing-unpack summary{list-style:none;cursor:pointer;padding:1rem 0;font-weight:600;display:flex;align-items:center;justify-content:space-between;gap:1rem}.writing-unpack summary::-webkit-details-marker{display:none}.writing-unpack summary::after{content:"+";font-size:1.4rem;font-weight:400}.writing-unpack[open] summary::after{content:"−"}.writing-unpack-content{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;padding:0 0 1.4rem}.writing-unpack-content div{border-left:1px solid rgba(255,255,255,.22);padding-left:1rem}.writing-unpack-content strong{display:block;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.4rem}.writing-unpack-content p{margin:0;line-height:1.55;font-size:.92rem;opacity:.8}@media(max-width:850px){.writing-grid{grid-template-columns:1fr}.writing-card{min-height:0}.writing-unpack-content{grid-template-columns:1fr}.writing-unpack-content div{border-left:0;border-top:1px solid rgba(255,255,255,.16);padding:.9rem 0 0}}
+/* Seamless marquee */
+.marquee{overflow:hidden}.marquee-track{display:flex;width:max-content;animation:ah-marquee 28s linear infinite}.marquee-track span{display:block;white-space:nowrap;padding-right:1.5rem}@keyframes ah-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -47,7 +54,10 @@
     </figure>
   </div>
   <div class="marquee" aria-label="Areas of expertise">
-    <div>Media Relations · Strategic Communications · Crisis Communications · Executive Positioning · Messaging · Earned Media · Media Relations · Strategic Communications · Crisis Communications · Executive Positioning · Messaging · Earned Media ·&nbsp;</div>
+    <div class="marquee-track">
+      <span>Media Relations · Strategic Communications · Crisis Communications · Executive Positioning · Messaging · Earned Media ·</span>
+      <span aria-hidden="true">Media Relations · Strategic Communications · Crisis Communications · Executive Positioning · Messaging · Earned Media ·</span>
+    </div>
   </div>
 </section>
 
@@ -289,157 +299,62 @@
   <div class="section-heading reveal">
     <div>
       <p class="eyebrow">04 / Writing</p>
-      <h2>Ideas, arguments<br><em>&amp; perspective.</em></h2>
+      <h2>Selected<br><em>writing.</em></h2>
     </div>
-    <p>Selected published writing, including bylined commentary and thought leadership.</p>
+    <p>Published commentary, client news writing and community communications. Open any sample to read the complete piece in a clean portfolio format.</p>
   </div>
 
-  <article class="project-card dark reveal writing-feature">
-    <p class="client">Bylined Opinion · PRWeek</p>
-    <h3>Can Brands Be Our Besties?</h3>
-    <p class="project-copy"><em>No amount of mewing or auramaxxing will help brands up their rizz if they’re not compensating and crediting creators.</em></p>
-    <p class="project-note">An original opinion article I authored, pitched and placed in PRWeek, examining how brands can connect with Gen Z without forcing relatability or co-opting creator culture. The piece was also republished by Campaign Asia.</p>
+  <div class="writing-showcase">
+    <article class="writing-feature-card reveal">
+      <p class="writing-label">Featured writing · Bylined opinion</p>
+      <h3>Can Brands Be Our Besties?</h3>
+      <p class="writing-deck">No amount of mewing or auramaxxing will help brands up their rizz if they’re not compensating and crediting creators.</p>
+      <p class="writing-role"><strong>Authored, pitched and placed by Albert Heape.</strong> An opinion piece on how brands can connect with Gen Z without forcing relatability or co-opting creator culture.</p>
+      <div class="publication-row" aria-label="Publication history">
+        <div class="publication-mark"><strong>PRWeek</strong><span>Originally published</span></div>
+        <div class="publication-mark"><strong>Campaign Asia</strong><span>Republished</span></div>
+      </div>
+      <details class="writing-unpack">
+        <summary>Unpack the piece</summary>
+        <div class="writing-unpack-content">
+          <div><strong>The angle</strong><p>A first-person take on why forced Gen Z relatability can backfire, and why brands are better served by crediting, paying and collaborating with creators.</p></div>
+          <div><strong>My role</strong><p>I developed the idea, wrote the article and pitched it for publication.</p></div>
+          <div><strong>Publication path</strong><p>The piece was originally published by PRWeek and later republished by Campaign Asia.</p></div>
+        </div>
+      </details>
+      <div class="writing-actions">
+        <a href="Albert-Heape-PRWeek-Byline.pdf" class="primary-sample" target="_blank" rel="noreferrer">View published PDF ↗</a>
+        <a href="https://www.prweek.com/article/1907874/brands-besties" target="_blank" rel="noreferrer">Read on PRWeek ↗</a>
+        <a href="https://www.campaignasia.com/article/should-brands-try-to-be-besties-with-genz/a3owpj6w8owqu7frwrwf3agkq2" target="_blank" rel="noreferrer">Read on Campaign Asia ↗</a>
+      </div>
+    </article>
 
-    <div class="writing-publications" style="display:flex;gap:1rem;flex-wrap:wrap;margin:1.5rem 0;">
-      <div style="flex:1;min-width:220px;border:1px solid currentColor;padding:1rem 1.25rem;">
-        <strong style="display:block;font-size:1.15rem;">PRWeek</strong>
-        <span style="display:block;opacity:.72;margin-top:.2rem;">Originally published</span>
-      </div>
-      <div style="flex:1;min-width:220px;border:1px solid currentColor;padding:1rem 1.25rem;">
-        <strong style="display:block;font-size:1.15rem;">Campaign Asia</strong>
-        <span style="display:block;opacity:.72;margin-top:.2rem;">Republished</span>
-      </div>
+    <div class="writing-grid">
+      <article class="writing-card reveal">
+        <p class="writing-label">Client news release · Willow</p>
+        <h3>Willow Launches First Original Podcast, “Game On With Grace”</h3>
+        <p>Drafted the launch announcement for Willow’s first original podcast and managed the supporting media outreach, interview coordination and follow-up.</p>
+        <div class="writing-metrics"><span><strong>71</strong>online stories</span><span><strong>264M</strong>combined audience</span><span><strong>2.83M</strong>estimated views</span></div>
+        <div class="writing-actions"><a href="Albert-Heape-Writing-Sample-Willow.pdf" target="_blank" rel="noreferrer">View writing sample ↗</a></div>
+      </article>
+
+      <article class="writing-card reveal">
+        <p class="writing-label">Community communications · Curacao</p>
+        <h3>Curacao Stands With Our Community</h3>
+        <p>Drafted community-facing messaging announcing Curacao’s Essential Assistance Program for families facing uncertainty and urgent household needs.</p>
+        <p class="writing-note">A sample of sensitive, public-facing client communications.</p>
+        <div class="writing-actions"><a href="Albert-Heape-Writing-Sample-Curacao.pdf" target="_blank" rel="noreferrer">View writing sample ↗</a></div>
+      </article>
+
+      <article class="writing-card reveal">
+        <p class="writing-label">Company byline · Technology</p>
+        <h3>Overwhelmed and Inspired: What I Learned at My First CES</h3>
+        <p>A first-person piece on AI overload, changing consumer expectations and the technologies that stood out at CES 2025.</p>
+        <p class="writing-note"><strong>By Albert Heape</strong> · Published on the Bob Gold &amp; Associates blog.</p>
+        <div class="writing-actions"><a href="Albert-Heape-Writing-Sample-CES.pdf" target="_blank" rel="noreferrer">View writing sample ↗</a></div>
+      </article>
     </div>
-
-    <div class="case-links">
-      <a href="https://www.prweek.com/article/1907874/brands-besties" target="_blank" rel="noreferrer">Read on PRWeek ↗</a>
-      <a href="https://www.campaignasia.com/article/should-brands-try-to-be-besties-with-genz/a3owpj6w8owqu7frwrwf3agkq2" target="_blank" rel="noreferrer">Read on Campaign Asia ↗</a>
-    </div>
-
-    <details class="writing-sample" style="margin-top:1.5rem;border-top:1px solid currentColor;padding-top:1rem;">
-      <summary style="cursor:pointer;font-weight:600;">Read full article</summary>
-      <div class="body-copy" style="max-width:780px;margin-top:1.5rem;">
-        <p>If you’re a major brand today, no amount of <a href="https://www.merriam-webster.com/slang/mewing" target="_blank" rel="noreferrer">mewing</a> or <a href="https://www.thecut.com/article/what-is-auramaxxing-how-to-aura-points.html" target="_blank" rel="noreferrer">auramaxxing</a> will help up your rizz to a level ten Gen Z <a href="https://www.tiktok.com/@aaronmakelky/video/7377540197241621803" target="_blank" rel="noreferrer">sigma</a>, lil bro.</p>
-        <p>If that didn’t make sense to you, you’re likely not as chronically online as Gen Z — much like today’s corporate leaders.</p>
-        <p>Gen Z, otherwise known as <a href="https://nielseniq.com/wp-content/uploads/sites/4/2024/06/NIQ_SpendZ-Report-_LINKS.pdf" target="_blank" rel="noreferrer">Spend Z</a>, is already earning disposable income and is ready to buy, buy, buy. With brands desperate for a drop of that sweet post-student-loan payment discretionary spending, they’ve turned to adopting Gen Z memes, trends and brainrot slang to appear more relatable.</p>
-        <p>But at what point does an attempt at relatability feel less sigma and more like disingenuous pandering, à la 55-year-old Steve Buscemi in <em>30 Rock</em>, dressed like a teenager asking, “<a href="https://www.theverge.com/2017/7/13/15966094/30-rock-buscemi-how-do-you-do-fellow-kids-meme-kill-it-please" target="_blank" rel="noreferrer">How do you do, fellow kids?</a>”</p>
-        <p>We’ve already seen these efforts backfire.</p>
-        <p>Adidas, for instance, was accused last year of using the <a href="https://www.barstoolsports.com/blog/3531876/the-chill-guy-meme-a-universal-connection" target="_blank" rel="noreferrer">Chill Guy meme</a> without the original artist Phillip Banks’ consent or compensation.</p>
-        <p>Or, take the “very demure, very mindful” phrase <a href="https://www.prweek.com/article/1885802/tiktoker-jools-lebron-shares-demure-lyftsey-when-using-lyft" target="_blank" rel="noreferrer">coined by TikTok creator Jools Lebron</a>, which vanished as quickly as it appeared; smothered by relentless corporate meme-jacking as brands scrambled to prove Gen Z relatability.</p>
-        <p>Memes don’t appear out of thin air. They’re brought to existence by content creators, artists and everyday users who pour their creativity into the internet’s collective consciousness. Too often these creators don’t see a dime when corporations hijack their work in a quest to be more relatable and, ultimately, profitable.</p>
-        <p>The lifecycle of today’s memes exist as such: regular people have fun with it, brands latch on, and, suddenly, it’s dead.</p>
-        <p>Gen Z recognizes this corporate inauthenticity and it leaves them feeling exploited and disconnected.</p>
-        <p>Part of the trade-off of “free” digital social spaces such as X, Instagram and TikTok are the existence of brands and their advertising. Yet, brands have recently taken it a step further, anthropomorphizing corporations into our fellow Gen Z besties.</p>
-        <p>Nonetheless, when done well, the strategy can be clever enough to make us laugh and feel seen. When it’s forced, we get the infamous “ick.”</p>
-        <p>Not all brands get it wrong. Some manage to come across relatively genuine by uplifting creators rather than exploiting them.</p>
-        <p>Through meaningful, <em>paid</em> partnerships with creators, Marc Jacobs, for example, keeps its finger on the pulse of online culture rather than playing catch-up.</p>
-        <p>The brand collaborates with leading Gen Z voices like comedy podcasters <a href="https://www.tiktok.com/@emergencyintercomcrave/video/7447213386615573782" target="_blank" rel="noreferrer">Emergency Intercom</a> and YouTubers <a href="https://www.tiktok.com/@marcjacobs/video/7359593546132901162?lang=en" target="_blank" rel="noreferrer">Slushy Noobz</a>, along with micro-micro-influencers like <a href="https://www.tiktok.com/@sylvaniandrama?lang=en" target="_blank" rel="noreferrer">@SylvanianDrama</a>, who stages soap-opera-esque skits with tiny Calico Critters figurines.</p>
-        <p>Each partnering creator brings their authentic voice to sponsored content with the brand amplifying their creativity instead of co-opting it.</p>
-        <p>The results speak for themselves: <a href="https://www.instagram.com/marcjacobs/reel/C64P7TRvX7O/" target="_blank" rel="noreferrer">Sylvanian Drama’s video</a> promoting Marc Jacobs’ Tote Bag earned nearly 2 million likes on Instagram, while influencer Nara Smith’s TikTok making the designer bag “from scratch” hit 2.5 million likes.</p>
-        <p>Collaborations like Marc Jacobs' Heaven line’s <a href="https://www.instagram.com/heavn/p/DDZ9HpXxrI8/" target="_blank" rel="noreferrer">Emergency Intercom collection</a> consistently sell out in minutes — despite high price tags.</p>
-        <p>So, what’s the takeaway for brands? Know your purpose and provide real value instead of chasing empty engagement. Gen Z knows the difference.</p>
-        <p>Respect creators. Pay them, collaborate meaningfully, give credit and think long-term. Not every trend fits your brand. Don’t sacrifice your image and values for fleeting engagement.</p>
-        <p>In the end, Gen Z likes it when brands understand us, but being our besties might be a bit much. When they try too hard and miss the mark, well, -10,000 aura points.</p>
-        <p><em>Albert Heape is an account executive at Bob Gold &amp; Associates.</em></p>
-      </div>
-    </details>
-  </article>
-
-  <div class="writing-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem;margin-top:1.5rem;">
-    <article class="project-card reveal">
-      <p class="client">Client News Release · Willow</p>
-      <h3>Willow Launches First Original Podcast, “Game On with Grace”</h3>
-      <p class="project-copy">Drafted the launch release for Willow’s first original podcast and managed media outreach, interview coordination and follow-up.</p>
-      <div class="metric-grid">
-        <div><strong>71</strong><span>online stories</span></div>
-        <div><strong>264M</strong><span>combined audience</span></div>
-        <div><strong>2.83M</strong><span>estimated views</span></div>
-      </div>
-      <p class="project-note">Coverage included Daily Mail, The Streamable, Broadcast Now, Advanced Television and CricExec.</p>
-      <details class="writing-sample" style="margin-top:1.5rem;border-top:1px solid currentColor;padding-top:1rem;">
-        <summary style="cursor:pointer;font-weight:600;">Read writing sample</summary>
-        <div class="body-copy" style="max-width:780px;margin-top:1.5rem;">
-          <p>WILLOW LAUNCHES FIRST ORIGINAL PODCAST, “GAME ON WITH GRACE,” HOSTED BY FAST-RISING SPORTS BROADCASTER GRACE HAYDEN</p>
-<p>Bi-Weekly Series Premieres Sunday, July 20, Offering Candid Conversations That Connect the World of Cricket with Pop Culture</p>
-<p>Mountain View, CA – July 17, 2025 – Willow, offering more live, streaming and on-demand cricket than any other sports service, today announced the launch of its first original program, Game On with Grace, a weekly video podcast hosted by Australian commentator and TV personality Grace Hayden. Premiering Sunday, July 20, 2025, new episodes will debut every other Sunday night across all Willow platforms including Willow TV, Willow Sports and the Willow App, and major podcast platforms.</p>
-<p>Hayden, 23, brings on-camera experience from the IPL, Cricket World Cup, GT20 Canada and Channel 7 Australia, along with a social media following of more than 300,000 fans. The daughter of Australian cricket great Matthew Hayden, Grace has carved out her own path as a versatile host and commentator, blending deep cricket insight with a modern, lifestyle-oriented voice that resonates with both young audiences and brands.</p>
-<p>“Game On is about pulling back the curtain on the world of sports’ untold stories,” said Grace Hayden, host of Game On with Grace. “I grew up in cricket’s front row and have covered its biggest tournaments, but the moments that fascinate me most happen off camera. Partnering with Willow allows me to share those raw, funny, and inspiring conversations with athletes, artists, and anyone chasing greatness. I can’t wait to bring these stories to fans each week on the Willow app and wherever they listen to podcasts.”</p>
-<p>Game On with Grace is a first-of-its-kind podcast featuring guests from across the sports spectrum and delivering heartfelt stories, fresh perspectives and behind-the-scenes insights into the lives of athletes and sports figures. With cricket as its heartbeat, the show also explores broader themes in sports, pop culture and personal identity, offering the kind of honest, informal conversations not often found in traditional sports media.</p>
-<p>“Launching Willow’s first original series is an important step in expanding how we serve and grow the cricket community,” said Todd Myers, COO of Willow. “Grace’s knowledge of the game, combined with a confident on-screen presence, makes her a uniquely powerful and authentic voice as the host of Game On with Grace. This podcast will bring authenticity, energy, and a fresh voice that will resonate with both longtime cricket fans and newcomers alike.”</p>
-<p>Watch Game On with Grace starting Sunday, July 20 on the Willow app, Willow Sports, Willow TV and all major podcast platforms including Spotify, Apple Podcasts, Pandora, Amazon Music and more.</p>
-<h4 style="margin-top:1.5rem;">About Willow</h4>
-<p>Willow is the premier destination for cricket in the United States and Canada, boasting the most comprehensive live, streaming, and on-demand cricket coverage available. Guided by its mission to make cricket globally accessible, Willow combines cricket’s rich heritage with innovative broadcasting to offer an unmatched viewing experience.</p>
-<p>Dedicated to excellence and innovation, Willow provides cricket enthusiasts with HD-quality live streaming and extensive coverage from nearly every major cricket board and tournament worldwide.</p>
-<p>Willow’s TV network is also available through top providers such as DISH, Sling, Fios, Spectrum, Xfinity, Optimum, DIRECTV, DIRECTV Stream, Fubo and Prime Video, and also offers a dedicated streaming app available on all major CTV devices, including Apple TV, Roku, Samsung Smart TVs, Amazon Fire TV, Xbox One, Android TV, Chromecast, Google TV, and more, ensuring fans never miss a moment of the action.</p>
-<p>Explore the ultimate cricket experience at www.willow.tv.</p>
-        </div>
-      </details>
-    </article>
-
-    <article class="project-card dark reveal">
-      <p class="client">Community Communications · Curacao</p>
-      <h3>Curacao Stands With Our Community</h3>
-      <p class="project-copy">Drafted community-facing messaging announcing Curacao’s Essential Assistance Program and reaffirming the company’s support for families during a period of uncertainty.</p>
-      <p class="project-note">The piece balances practical program information with empathetic, community-focused messaging for a sensitive public issue.</p>
-      <details class="writing-sample" style="margin-top:1.5rem;border-top:1px solid currentColor;padding-top:1rem;">
-        <summary style="cursor:pointer;font-weight:600;">Read writing sample</summary>
-        <div class="body-copy" style="max-width:780px;margin-top:1.5rem;">
-          <p>Curacao Stands With Our Community</p>
-<p>Los Angeles – July 15, 2025 — At Curacao, our customers are the heart of our community. For over 45 years, they have welcomed us into their neighborhoods, trusted us with their home necessities, and helped build not just this city, but this company. We honor their strength, their faith, their family values, and the tireless work they have poured into building a better life for themselves, for their families, and for this country.</p>
-<p>We know these are uncertain times. Many in our community are feeling unsafe, and some are afraid to even leave their homes due to the recent environment. We share that concern deeply, and we’re here to stand with them.</p>
-<p>To assist those affected, we’ve launched the ‘Essential Assistance Program’. 
-Families that are currently unable to leave home and have an urgent need for basic household items—like a small appliance, microwave, fridge, TV etc.—may be able to receive these items completely free, including home delivery if needed.</p>
-<p>We are also offering a limited supply of ESSENTIAL FOOD, with home delivery if necessary. This food assistance is also completely free for families who are truly in need and unable to leave their homes.</p>
-<p>Families experiencing difficulties because they are unable to leave their homes may benefit from this help, they can visit: https://icuracao.com/estamoscontigo and fill out the request form. All the information submitted is fully confidential.</p>
-<p>We’ll carefully review each submission with care and compassion and do our best to prioritize those with the most urgent needs.</p>
-<p>Our community is large, and Curacao’s resources are limited. We kindly ask that this assistance be reserved for those who need it most. Thank you for understanding.</p>
-<p>Our hearts are with every member of our community.</p>
-<p>We’ll get through this—together, stronger, and more united.</p>
-<p>With love,</p>
-<p>Your Curacao Family</p>
-<h4 style="margin-top:1.5rem;">About Curacao and The Curacao Foundation</h4>
-<p>Since its founding in 1978, Curacao has been guided by its mission to improve customers’ lives by extending credit options to hardworking, low-to-moderate-income individuals needing high-quality home and tech products, travel, export and money transfer services at low monthly payments. At Curacao, customers can buy price-protected top brands and services on interest-protected credit while supporting the community. In addition, Curacao allocates a percentage of every purchase to support the advancement of its local communities through the Curacao Foundation. Curacao is an omnichannel retailer and lender serving customers online, over the phone, and in person in English and Spanish in Arizona, California, and Nevada.</p>
-<p>Curacao is headquartered at 1605 W Olympic Blvd, Los Angeles, CA 90015. For more information, visit icuracao.com.</p>
-<p>Established in 2002, The Curacao Foundation is a private foundation dedicated to building a future in which communities are financially strong, socially empowered, respected, and included. The Curacao Foundation has worked with over 100 charities, organizations and institutions focusing on financial literacy, health, well-being, education, and immigration all within a 10-mile radius of a Curacao retail location. In addition, the foundation supports community partner organizations through general operation and program grants.</p>
-<p>For more information, visit icuracao.com and foundation.icuracao.com.</p>
-        </div>
-      </details>
-    </article>
-
-    <article class="project-card reveal">
-      <p class="client">Company Byline · Technology</p>
-      <h3>Overwhelmed and Inspired: What I Learned at My First CES</h3>
-      <p class="project-copy">A first-person piece published on the Bob Gold &amp; Associates blog exploring AI overload, changing consumer expectations and the technologies that stood out at CES 2025.</p>
-      <p class="project-note"><strong>By Albert Heape</strong> · Thought leadership and technology commentary</p>
-      <details class="writing-sample" style="margin-top:1.5rem;border-top:1px solid currentColor;padding-top:1rem;">
-        <summary style="cursor:pointer;font-weight:600;">Read full article</summary>
-        <div class="body-copy" style="max-width:780px;margin-top:1.5rem;">
-          <p>Overwhelmed and Inspired: What I Learned at My First CES</p>
-<p>By Albert Heape</p>
-<p>Attending my first CES was a whirlwind of new technology, new faces and pure sensory overload. The massive event spans cavernous halls packed with towering displays, flashing lights and an endless maze of booths showcasing every kind of gadget you can imagine, from cutting-edge AI demos to, well, So. Many. Robot. Vacuums.</p>
-<p>But beyond the chaos, CES left me with valuable insights about where technology and our world are heading. In an interview at CES, Mark Cuban summed it up perfectly: “There are two types of companies: those that are great at AI, and everybody else.”</p>
-<p>At BG&amp;A, we’ve already embraced AI to streamline our workflows, but CES highlighted just how much potential AI has beyond the buzzword. Here are three key lessons I took away:</p>
-<h4 style="margin-top:1.5rem;">1. Cut Through the AI Noise</h4>
-<p>AI was everywhere. From AI-powered washing machines to AI-powered bird feeders. Though some of the claims bordered on absurd, like ‘AI water,’ which was simply a water filter that alerts you when it’s time to replace it. Let’s call it what it is: marketing spin.</p>
-<p>What stuck with me, though, was the reminder to balance innovation with humanity. While AI can make our work more efficient and take on repetitive tasks, it can’t replace the originality and imagination that only people bring. By design, AI learns from what already exists, but it’s human creativity that drives progress and innovation.</p>
-<p>For companies, the challenge is clear: don’t lose sight of the human element. Celebrate creativity and use AI as a tool to empower your team, not make them feel obsolete.</p>
-<h4 style="margin-top:1.5rem;">2. Smart Technology Is Non-Negotiable</h4>
-<p>Today, consumers expect every device to work as seamlessly and intuitively as their smartphone, and to offer the same level of customization. When it doesn’t, frustration and negative reviews ensue.</p>
-<p>While car apps offering features like remote starting, AC controls and even parking have been around for some time, one demo I saw took customization to an entirely new level.</p>
-<p>Imagine your teenager just got their license, and, naturally, you’re concerned about their safety. This retrofitted 1970 Ford Bronco running Sonatus Automator AI can detect if a passenger enters the vehicle and automatically play a message (loudly) instructing them to leave. Or, if the temperature rises above 70 degrees, it can automatically blast the AC and cue up some summertime tunes.</p>
-<p>This kind of personalization and seamless connectivity is quickly becoming the new standard. Companies that fail to meet these expectations risk being left behind in an increasingly smart world.</p>
-<h4 style="margin-top:1.5rem;">3. Sometimes, Simple Wins</h4>
-<p>Amid the buzz of autonomous vehicles, transparent TVs and humanoid robots, the gadget that stuck with me most was a small, fuzzy creature that… simply looks around. You can clip it to your bag, your jacket or even wear it yourself, and it interacts with people nearby by nodding at them.</p>
-<p>Often, it’s the simplest ideas that make the biggest impact. Amidst the glitz and glamour of next-gen tech, Mirumi was a refreshing reminder. It’s not here to revolutionize the world, just to bring a little joy, and that kind of innovation deserves its moment too.</p>
-<h4 style="margin-top:1.5rem;">Final Thoughts</h4>
-<p>CES can be overwhelming, but it’s also incredibly inspiring and offers a window into what our future lives might look like. My biggest takeaway? It’s not just about the tools we invent, but how we choose to use them.</p>
-<p>As I left CES, my head was spinning with questions: What will the future of work look like? Will companies truly use AI to innovate, or will it become an excuse to replace employees with flashy tech? What other technologies will become extensions of our mobile devices? And, most importantly, when can I get my hands on Mirumi?</p>
-<p>It feels like we’re at an inflection point. Today’s AI-powered technology could either be remembered as another dot-com bubble, or, spark meaningful change for the better. How we choose to harness this technology, or not, will define the legacy we leave behind.</p>
-        </div>
-      </details>
-    </article>
   </div>
-
 </section>
 
 <section class="experience section" id="experience">
