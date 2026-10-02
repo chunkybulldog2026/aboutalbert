@@ -15,7 +15,7 @@
 /* Writing portfolio */
 .writing-showcase{display:grid;gap:1.5rem;margin-top:2rem}.writing-feature-card{padding:clamp(1.5rem,4vw,3.5rem);border:1px solid rgba(0,0,0,.16);background:#151515;color:#fff}.writing-feature-card .writing-label,.writing-card .writing-label{font-size:.78rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;opacity:.7;margin:0 0 1rem}.writing-feature-card h3{font-size:clamp(2rem,5vw,4.25rem);line-height:.98;max-width:850px;margin:.25rem 0 1rem}.writing-deck{font-family:Newsreader,serif;font-size:clamp(1.1rem,2vw,1.45rem);line-height:1.45;max-width:800px;margin:0 0 1.25rem}.writing-role{font-size:.95rem;line-height:1.6;max-width:760px;opacity:.78;margin:0 0 1.5rem}.publication-row{display:flex;gap:.75rem;flex-wrap:wrap;margin:1.5rem 0}.publication-mark{border:1px solid rgba(255,255,255,.3);padding:.75rem 1rem;min-width:160px}.publication-mark strong{display:block;font-size:1rem}.publication-mark span{display:block;font-size:.8rem;opacity:.65;margin-top:.15rem}.writing-actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.5rem}.writing-actions a{display:inline-flex;align-items:center;justify-content:center;padding:.8rem 1rem;border:1px solid currentColor;text-decoration:none;font-weight:600;font-size:.9rem}.writing-feature-card .writing-actions a.primary-sample{background:#fff;color:#151515;border-color:#fff}.writing-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}.writing-card{border:1px solid rgba(0,0,0,.16);padding:1.5rem;display:flex;flex-direction:column;min-height:330px}.writing-card h3{font-size:1.55rem;line-height:1.12;margin:.25rem 0 1rem}.writing-card p{line-height:1.6}.writing-card .writing-actions{margin-top:auto;padding-top:1rem}.writing-card .writing-actions a{width:100%}.writing-metrics{display:flex;gap:1rem;flex-wrap:wrap;margin:1rem 0}.writing-metrics span{font-size:.8rem;line-height:1.3}.writing-metrics strong{display:block;font-size:1.2rem}.writing-note{font-size:.88rem;opacity:.72;margin-top:.75rem}.writing-unpack{margin-top:1.6rem;border-top:1px solid rgba(255,255,255,.22);border-bottom:1px solid rgba(255,255,255,.22)}.writing-unpack summary{list-style:none;cursor:pointer;padding:1rem 0;font-weight:600;display:flex;align-items:center;justify-content:space-between;gap:1rem}.writing-unpack summary::-webkit-details-marker{display:none}.writing-unpack summary::after{content:"+";font-size:1.4rem;font-weight:400}.writing-unpack[open] summary::after{content:"−"}.writing-unpack-content{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;padding:0 0 1.4rem}.writing-unpack-content div{border-left:1px solid rgba(255,255,255,.22);padding-left:1rem}.writing-unpack-content strong{display:block;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.4rem}.writing-unpack-content p{margin:0;line-height:1.55;font-size:.92rem;opacity:.8}@media(max-width:850px){.writing-grid{grid-template-columns:1fr}.writing-card{min-height:0}.writing-unpack-content{grid-template-columns:1fr}.writing-unpack-content div{border-left:0;border-top:1px solid rgba(255,255,255,.16);padding:.9rem 0 0}}
 /* Seamless marquee */
-.marquee{overflow:hidden;white-space:nowrap}.marquee-track{display:flex;flex-direction:row;flex-wrap:nowrap;align-items:center;width:max-content;animation:ah-marquee 28s linear infinite}.marquee-track span{display:inline-block;flex:0 0 auto;white-space:nowrap;padding-right:1.5rem}@keyframes ah-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}
+.marquee{overflow:hidden}.marquee .marquee-track{display:flex;width:max-content;animation:ah-marquee 32s linear infinite}.marquee-group{display:flex;flex-shrink:0;white-space:nowrap}.marquee-group>span{display:block;flex-shrink:0;padding-right:1.5rem}@keyframes ah-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}@media(prefers-reduced-motion:reduce){.marquee .marquee-track{animation:none}}
 </style>
 </head>
 <body>
@@ -55,8 +55,14 @@
   </div>
   <div class="marquee" aria-label="Areas of expertise">
     <div class="marquee-track">
-      <span>Media Relations · Strategic Communications · Crisis Communications · Executive Positioning · Messaging · Earned Media ·</span>
-      <span aria-hidden="true">Media Relations · Strategic Communications · Crisis Communications · Executive Positioning · Messaging · Earned Media ·</span>
+      <span class="marquee-group">
+        <span>Media Relations · Strategic Communications · Crisis Communications · Executive Positioning · Messaging · Earned Media ·</span>
+        <span>Media Relations · Strategic Communications · Crisis Communications · Executive Positioning · Messaging · Earned Media ·</span>
+      </span>
+      <span class="marquee-group" aria-hidden="true">
+        <span>Media Relations · Strategic Communications · Crisis Communications · Executive Positioning · Messaging · Earned Media ·</span>
+        <span>Media Relations · Strategic Communications · Crisis Communications · Executive Positioning · Messaging · Earned Media ·</span>
+      </span>
     </div>
   </div>
 </section>
