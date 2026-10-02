@@ -15,7 +15,7 @@
 /* Writing portfolio */
 .writing-showcase{display:grid;gap:1.5rem;margin-top:2rem}.writing-feature-card{padding:clamp(1.5rem,4vw,3.5rem);border:1px solid rgba(0,0,0,.16);background:#151515;color:#fff}.writing-feature-card .writing-label,.writing-card .writing-label{font-size:.78rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;opacity:.7;margin:0 0 1rem}.writing-feature-card h3{font-size:clamp(2rem,5vw,4.25rem);line-height:.98;max-width:850px;margin:.25rem 0 1rem}.writing-deck{font-family:Newsreader,serif;font-size:clamp(1.1rem,2vw,1.45rem);line-height:1.45;max-width:800px;margin:0 0 1.25rem}.writing-role{font-size:.95rem;line-height:1.6;max-width:760px;opacity:.78;margin:0 0 1.5rem}.publication-row{display:flex;gap:.75rem;flex-wrap:wrap;margin:1.5rem 0}.publication-mark{border:1px solid rgba(255,255,255,.3);padding:.75rem 1rem;min-width:160px}.publication-mark strong{display:block;font-size:1rem}.publication-mark span{display:block;font-size:.8rem;opacity:.65;margin-top:.15rem}.writing-actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.5rem}.writing-actions a{display:inline-flex;align-items:center;justify-content:center;padding:.8rem 1rem;border:1px solid currentColor;text-decoration:none;font-weight:600;font-size:.9rem}.writing-feature-card .writing-actions a.primary-sample{background:#fff;color:#151515;border-color:#fff}.writing-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}.writing-card{border:1px solid rgba(0,0,0,.16);padding:1.5rem;display:flex;flex-direction:column;min-height:330px}.writing-card h3{font-size:1.55rem;line-height:1.12;margin:.25rem 0 1rem}.writing-card p{line-height:1.6}.writing-card .writing-actions{margin-top:auto;padding-top:1rem}.writing-card .writing-actions a{width:100%}.writing-metrics{display:flex;gap:1rem;flex-wrap:wrap;margin:1rem 0}.writing-metrics span{font-size:.8rem;line-height:1.3}.writing-metrics strong{display:block;font-size:1.2rem}.writing-note{font-size:.88rem;opacity:.72;margin-top:.75rem}.writing-unpack{margin-top:1.6rem;border-top:1px solid rgba(255,255,255,.22);border-bottom:1px solid rgba(255,255,255,.22)}.writing-unpack summary{list-style:none;cursor:pointer;padding:1rem 0;font-weight:600;display:flex;align-items:center;justify-content:space-between;gap:1rem}.writing-unpack summary::-webkit-details-marker{display:none}.writing-unpack summary::after{content:"+";font-size:1.4rem;font-weight:400}.writing-unpack[open] summary::after{content:"−"}.writing-unpack-content{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;padding:0 0 1.4rem}.writing-unpack-content div{border-left:1px solid rgba(255,255,255,.22);padding-left:1rem}.writing-unpack-content strong{display:block;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.4rem}.writing-unpack-content p{margin:0;line-height:1.55;font-size:.92rem;opacity:.8}@media(max-width:850px){.writing-grid{grid-template-columns:1fr}.writing-card{min-height:0}.writing-unpack-content{grid-template-columns:1fr}.writing-unpack-content div{border-left:0;border-top:1px solid rgba(255,255,255,.16);padding:.9rem 0 0}}
 /* Seamless marquee */
-.marquee{overflow:hidden}.marquee .marquee-track{display:flex;width:max-content;animation:ah-marquee 32s linear infinite}.marquee-group{display:flex;flex-shrink:0;white-space:nowrap}.marquee-group>span{display:block;flex-shrink:0;padding-right:1.5rem}@keyframes ah-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}@media(prefers-reduced-motion:reduce){.marquee .marquee-track{animation:none}}
+.marquee{overflow:hidden}.marquee-track{display:flex;width:max-content;animation:ah-marquee 28s linear infinite}.marquee-track span{display:block;white-space:nowrap;padding-right:1.5rem}@keyframes ah-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}
 </style>
 </head>
 <body>
@@ -55,14 +55,8 @@
   </div>
   <div class="marquee" aria-label="Areas of expertise">
     <div class="marquee-track">
-      <span class="marquee-group">
-        <span>Media Relations · Strategic Communications · Crisis Communications · Executive Positioning · Messaging · Earned Media ·</span>
-        <span>Media Relations · Strategic Communications · Crisis Communications · Executive Positioning · Messaging · Earned Media ·</span>
-      </span>
-      <span class="marquee-group" aria-hidden="true">
-        <span>Media Relations · Strategic Communications · Crisis Communications · Executive Positioning · Messaging · Earned Media ·</span>
-        <span>Media Relations · Strategic Communications · Crisis Communications · Executive Positioning · Messaging · Earned Media ·</span>
-      </span>
+      <span>Media Relations · Strategic Communications · Crisis Communications · Executive Positioning · Messaging · Earned Media ·</span>
+      <span aria-hidden="true">Media Relations · Strategic Communications · Crisis Communications · Executive Positioning · Messaging · Earned Media ·</span>
     </div>
   </div>
 </section>
@@ -119,15 +113,15 @@
 
     <article class="project-card reveal" data-industry="media">
       <p class="client">StreamTV Show 2026</p>
-      <h3>Building a high-value media program around the streaming industry’s annual gathering</h3>
-      <p class="project-copy">Led media relations for the 2026 StreamTV Show, securing journalist moderators, driving media attendance and supporting coverage before, during and after the event.</p>
+      <h3>Building a national media program around the streaming industry’s annual gathering</h3>
+      <p class="project-copy">Led media relations for the 2026 StreamTV Show, securing 10 journalist moderators from outlets including Axios, Business Insider, CNET and Forbes, driving media attendance and supporting coverage before, during and after the event.</p>
       <div class="story-grid">
 <a class="story-tile" href="https://www.axios.com/2026/06/18/fox-roku-streaming-distribution-bias" target="_blank" rel="noreferrer"><img src="story-streamtv-axios.jpg" alt="Axios coverage from StreamTV Show 2026" loading="lazy"><span><strong>Axios</strong><b>View story ↗</b></span></a>
 <a class="story-tile" href="https://www.adexchanger.com/tv/inside-the-trade-desks-pitch-for-ventura-tv-os/" target="_blank" rel="noreferrer"><img src="story-streamtv-adex.jpg" alt="AdExchanger coverage from StreamTV Show 2026" loading="lazy"><span><strong>AdExchanger</strong><b>View story ↗</b></span></a>
 </div>
 <div class="metric-grid">
         <div><strong>63</strong><span>media attendees</span></div>
-        <div><strong>10</strong><span>moderators secured</span></div>
+        <div><strong>10</strong><span>journalist moderators</span></div>
         <div><strong>194</strong><span>online pieces</span></div>
         <div><strong>773M</strong><span>combined audience</span></div>
       </div>
@@ -141,7 +135,7 @@
     <article class="project-card dark reveal" data-industry="consumer public">
       <p class="client">Curacao · Essential Assistance Program</p>
       <h3>Driving community-focused coverage across local, broadcast and retail media</h3>
-      <p class="project-copy">Supported communications around a free assistance program for families affected by immigration enforcement, with outreach tailored to local communities and regional media markets.</p>
+      <p class="project-copy">Supported media relations for a free assistance program serving families affected by immigration enforcement, with outreach tailored to local communities and regional media markets.</p>
       <div class="story-grid">
 <a class="story-tile" href="https://www.cbsnews.com/losangeles/video/curacao-launches-free-program-to-help-residents-affected-by-immigration-sweeps/" target="_blank" rel="noreferrer"><img src="story-curacao-cbs.jpg" alt="CBS News Los Angeles coverage of Curacao's Essential Assistance Program" loading="lazy"><span><strong>CBS News Los Angeles</strong><b>View story ↗</b></span></a>
 <a class="story-tile" href="https://www.kgun9.com/news/community-inspired-journalism/northside-news/curacao-offers-free-household-essentials-to-tucson-families-in-need" target="_blank" rel="noreferrer"><img src="story-curacao-kgun.jpg" alt="KGUN 9 coverage of Curacao's Essential Assistance Program" loading="lazy"><span><strong>KGUN 9</strong><b>View story ↗</b></span></a>
@@ -182,13 +176,13 @@
     <article class="project-card dark reveal" data-industry="public">
       <p class="client">Port of Long Beach</p>
       <h3>Supporting ongoing communications and media relations for a major U.S. seaport</h3>
-      <p class="project-copy">Support the Port of Long Beach across day-to-day and high-profile communications, including news releases, messaging, direct media outreach, executive interviews, coverage tracking and reporting, media tours and issues response. Work has also included crisis communications support during major operational incidents.</p>
+      <p class="project-copy">Provide ongoing communications and media relations support for the Port of Long Beach, including news releases, strategic messaging, direct media outreach, executive interviews, coverage analysis, media tours and issues response. Work has also included crisis communications support during major operational incidents.</p>
       <div style="width:100%;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#fff;margin:1.25rem 0;box-sizing:border-box;padding:24px;">
         <img src="polb-logo.png" alt="Port of Long Beach" loading="lazy" style="display:block;width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;">
       </div>
       <div class="metric-grid">
         <div><strong>10</strong><span>executive interviews secured at WEF</span></div>
-        <div><strong>9</strong><span>national media briefings secured for NY media tour</span></div>
+        <div><strong>10</strong><span>national media briefings secured for NY media tour</span></div>
       </div>
       <p class="project-note">Planned the New York media tour and secured briefings with Bloomberg, Reuters, Axios, CNBC, NBC Business, CBS MoneyWatch, The New York Times, The Wall Street Journal, AP and CNN.</p>
       <div class="metric-grid">
@@ -261,7 +255,7 @@
     <article class="project-card reveal" data-industry="sports">
       <p class="client">Utah 360°</p>
       <h3>Helping launch a national NIL story that broke through sports and business media</h3>
-      <p class="project-copy">Helped execute the PRSA LA PRISM Award-winning campaign, supporting outreach around a landmark NIL program for University of Utah athletes.</p>
+      <p class="project-copy">Helped execute the PRSA LA PRISM Award-winning campaign, with media outreach around a landmark NIL program for University of Utah athletes.</p>
       <div class="story-grid">
 <a class="story-tile" href="https://www.espn.com/college-sports/story/_/id/38575432/utah-utes-football-receive-trucks-nil-partnership" target="_blank" rel="noreferrer"><img src="story-utah-espn.jpg" alt="ESPN coverage of the Utah NIL truck program" loading="lazy"><span><strong>ESPN</strong><b>View story ↗</b></span></a>
 <a class="story-tile" href="https://www.usatoday.com/story/sports/ncaaf/2023/10/05/utah-utes-football-players-dodge-trucks-nil-deal/71072563007/" target="_blank" rel="noreferrer"><img src="story-utah-usatoday.jpg" alt="USA Today coverage of the Utah NIL truck program" loading="lazy"><span><strong>USA Today</strong><b>View story ↗</b></span></a>
@@ -321,7 +315,7 @@
         <div class="publication-mark"><strong>Campaign Asia</strong><span>Republished</span></div>
       </div>
       <details class="writing-unpack">
-        <summary>Unpack the piece</summary>
+        <summary>About this piece</summary>
         <div class="writing-unpack-content">
           <div><strong>The angle</strong><p>A first-person take on why forced Gen Z relatability can backfire, and why brands are better served by crediting, paying and collaborating with creators.</p></div>
           <div><strong>My role</strong><p>I developed the idea, wrote the article and pitched it for publication.</p></div>
@@ -329,7 +323,7 @@
         </div>
       </details>
       <div class="writing-actions">
-        <a href="Albert-Heape-PRWeek-Byline.pdf" class="primary-sample" target="_blank" rel="noreferrer">View published PDF ↗</a>
+        <a href="Albert-Heape-PRWeek-Byline.pdf" class="primary-sample" target="_blank" rel="noreferrer">Read published article ↗</a>
         <a href="https://www.prweek.com/article/1907874/brands-besties" target="_blank" rel="noreferrer">Read on PRWeek ↗</a>
         <a href="https://www.campaignasia.com/article/should-brands-try-to-be-besties-with-genz/a3owpj6w8owqu7frwrwf3agkq2" target="_blank" rel="noreferrer">Read on Campaign Asia ↗</a>
       </div>
@@ -341,7 +335,7 @@
         <h3>Willow Launches First Original Podcast, “Game On With Grace”</h3>
         <p>Drafted the launch announcement for Willow’s first original podcast and managed the supporting media outreach, interview coordination and follow-up.</p>
         <div class="writing-metrics"><span><strong>71</strong>online stories</span><span><strong>264M</strong>combined audience</span><span><strong>2.83M</strong>estimated views</span></div>
-        <div class="writing-actions"><a href="Game%20on%20with%20Grace%20Release.pdf" target="_blank" rel="noreferrer">View writing sample ↗</a></div>
+        <div class="writing-actions"><a href="Game%20on%20with%20Grace%20Release.pdf" target="_blank" rel="noreferrer">Read sample ↗</a></div>
       </article>
 
       <article class="writing-card reveal">
@@ -349,7 +343,7 @@
         <h3>Curacao Stands With Our Community</h3>
         <p>Drafted community-facing messaging announcing Curacao’s Essential Assistance Program for families facing uncertainty and urgent household needs.</p>
         <p class="writing-note">A sample of sensitive, public-facing client communications.</p>
-        <div class="writing-actions"><a href="Curacao%20Community%20PR%20Release%207-16.pdf" target="_blank" rel="noreferrer">View writing sample ↗</a></div>
+        <div class="writing-actions"><a href="Curacao%20Community%20PR%20Release%207-16.pdf" target="_blank" rel="noreferrer">Read sample ↗</a></div>
       </article>
 
       <article class="writing-card reveal">
@@ -357,7 +351,7 @@
         <h3>Overwhelmed and Inspired: What I Learned at My First CES</h3>
         <p>A first-person piece on AI overload, changing consumer expectations and the technologies that stood out at CES 2025.</p>
         <p class="writing-note"><strong>By Albert Heape</strong> · Published on the Bob Gold &amp; Associates blog.</p>
-        <div class="writing-actions"><a href="What%20I%20Learned%20at%20CES%20Byline.pdf" target="_blank" rel="noreferrer">View writing sample ↗</a></div>
+        <div class="writing-actions"><a href="What%20I%20Learned%20at%20CES%20Byline.pdf" target="_blank" rel="noreferrer">Read sample ↗</a></div>
       </article>
     </div>
   </div>
